@@ -7,18 +7,26 @@
     "light": "#FFE01B",
     "dark": "#C89400"
   },
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": ["introduction", "quickstart", "authentication"]
-    },
-    {
-      "group": "API Reference",
-      "pages": [
-        {
-          "openapi": "transactional.openapi.json"
-        }
-      ]
-    }
-  ]
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["introduction", "quickstart", "authentication"]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Reference",
+            "openapi": "transactional.openapi.json"
+          }
+        ]
+      }
+    ]
+  }
 }
