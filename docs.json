@@ -1,12 +1,23 @@
 {
   "name": "Mailchimp Demo",
   "theme": "mint",
+  "colors": {
+    "primary": "#FFE01B",
+    "light": "#FFF5AD",
+    "dark": "#000000"
+  },
   "navigation": [
     {
       "group": "API Reference",
       "pages": [
+        "api-reference/introduction"
+      ]
+    },
+    {
+      "group": "Mailchimp API",
+      "pages": [
         {
-          "group": "Transactional API",
+          "group": "Transactional",
           "openapi": "mailchimp.json"
         }
       ]
