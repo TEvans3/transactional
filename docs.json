@@ -6,22 +6,11 @@
     "light": "#FFF5AD",
     "dark": "#000000"
   },
-  "navigation": {
-    "tabs": [
-      {
-        "name": "Documentation",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": ["introduction"]
-          },
-          {
-            "group": "API Reference",
-            "pages": ["api-reference"]
-          }
-        ]
-      }
-    ]
-  },
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": ["introduction"]
+    }
+  ],
   "openapi": "mailchimp.json"
 }
