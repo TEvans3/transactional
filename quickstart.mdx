@@ -1,0 +1,42 @@
+---
+title: "Quick Start"
+description: "Make your first API call in under 5 minutes."
+---
+
+## Prerequisites
+
+- A MailChimp account with Transactional enabled (Standard plan or higher)
+- An API key from your [Transactional settings](https://mandrillapp.com/settings)
+
+## Your First Call — Ping the API
+
+Test your API key and confirm connectivity:
+
+```bash
+curl -sS -X POST "https://mandrillapp.com/api/1.0/users/ping" \
+  --header 'Content-Type: application/json' \
+  --data-raw '{ "key": "YOUR_API_KEY" }'
+```
+
+A successful response returns: `"PONG!"`
+
+## Send Your First Message
+
+```bash
+curl -sS -X POST "https://mandrillapp.com/api/1.0/messages/send" \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+    "key": "YOUR_API_KEY",
+    "message": {
+      "from_email": "you@yourdomain.com",
+      "to": [{"email": "recipient@example.com", "type": "to"}],
+      "subject": "Hello from MailChimp Transactional",
+      "text": "Your first transactional message."
+    }
+  }'
+```
+
+<Note>
+All API calls use HTTPS POST to `https://mandrillapp.com/api/1.0/`. 
+Any non-200 response indicates an error — check the returned JSON for details.
+</Note>
