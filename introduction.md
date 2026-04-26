@@ -1,6 +1,26 @@
-# Mailchimp Transactional API
+---
+title: "MailChimp Transactional API"
+description: "Send targeted, event-driven messages fast — with best-in-class deliverability."
+---
 
-Welcome to the interactive API documentation for Mailchimp Transactional. 
+## Overview
 
-### Quick Start
-Use the sidebar on the left to explore the endpoints and test requests directly from your browser.
+MailChimp Transactional (formerly Mandrill) is the infrastructure layer for transactional email — 
+password resets, order confirmations, account notifications. It's built for speed, reliability, 
+and developer control.
+
+This documentation covers the full REST API (v1.4.1), including:
+
+- **Messages** — Send, search, and inspect transactional messages
+- **Templates** — Manage and render message templates
+- **Webhooks** — Real-time event notifications for sends, opens, clicks, and bounces
+- **Senders** — Manage verified sending domains and subaccounts
+- **IPs** — Configure dedicated IPs and pools
+
+<Card title="Quick Start" icon="bolt" href="/quickstart">
+  Send your first transactional email in minutes
+</Card>
+
+<Card title="API Reference" icon="code" href="/api-reference">
+  Full endpoint reference, generated from our OpenAPI spec
+</Card>
