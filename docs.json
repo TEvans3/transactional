@@ -1,42 +1,23 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "MailChimp Transactional",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "favicon": "/favicon.svg",
   "colors": {
     "primary": "#FFE01B",
     "light": "#FFE01B",
     "dark": "#C89400"
   },
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "authentication"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Reference",
-            "openapi": {
-              "source": "/transactional.openapi.json"
-            }
-          }
-        ]
-      }
-    ]
-  }
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": ["introduction", "quickstart", "authentication"]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        {
+          "openapi": "transactional.openapi.json"
+        }
+      ]
+    }
+  ]
 }
