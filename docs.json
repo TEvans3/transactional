@@ -1,9 +1,15 @@
 {
   "name": "Mailchimp Demo",
+  "theme": "mint",
   "navigation": [
     {
       "group": "API Reference",
-      "openapi": "mailchimp.json"
+      "pages": [
+        {
+          "group": "Transactional API",
+          "openapi": "mailchimp.json"
+        }
+      ]
     }
   ]
 }
