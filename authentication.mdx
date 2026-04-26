@@ -1,0 +1,36 @@
+---
+title: "Authentication"
+description: "All requests to the Transactional API require an API key."
+---
+
+## API Key Authentication
+
+Every request to the MailChimp Transactional API requires your API key, passed in the 
+JSON body of each POST request as the `key` parameter.
+
+```json
+{
+  "key": "YOUR_API_KEY",
+  ...other parameters
+}
+```
+
+## Generating an API Key
+
+1. Log in to [Mailchimp Transactional](https://mandrillapp.com)
+2. Navigate to **Settings → API Keys**
+3. Click **Create New Key** and add a description
+4. Copy the key immediately — it cannot be retrieved after creation
+
+<Warning>
+Your API key provides full account access. Treat it like a password. 
+Never expose it in client-side code or commit it to a public repository.
+</Warning>
+
+## Base URL
+
+All API URLs are relative to:
+
+```
+https://mandrillapp.com/api/1.0/
+```
