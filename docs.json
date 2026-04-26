@@ -1,20 +1,18 @@
 {
   "name": "Mailchimp Demo",
   "theme": "mint",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Documentation",
-        "groups": [
-          {
-            "group": "Introduction",
-            "pages": [
-              "introduction"
-            ]
-          }
-        ]
-      }
-    ]
+  "colors": {
+    "primary": "#FFE01B",
+    "light": "#FFF5AD",
+    "dark": "#000000"
   },
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "introduction"
+      ]
+    }
+  ],
   "openapi": "mailchimp.json"
 }
