@@ -1,13 +1,16 @@
 {
   "name": "Mailchimp Demo",
+  "theme": "mint",
   "navigation": {
     "tabs": [
       {
-        "tab": "Docs",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting Started",
-            "pages": ["introduction"]
+            "group": "Introduction",
+            "pages": [
+              "introduction"
+            ]
           }
         ]
       }
