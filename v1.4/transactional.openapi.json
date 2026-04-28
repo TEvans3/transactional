@@ -11597,31 +11597,22 @@
                     "PING": "PONG!"
                 }
             },
-           "UsersPingRequest": {
-              "description": "Request payload for validating an API key with a ping",
-              "type": "object",
-              "required": ["test"],
-              "properties": {
-                "key": {
-                  "$ref": "#/components/schemas/ApiKey"
+            "UsersPingRequest": {
+                "description": "Request payload for validating an API key with a ping",
+                "example": {
+                    "key": "ONzNrsmbtNXoIKyfPmjnig"
                 },
-                "test": {
-                  "type": "string",
-                  "description": "Type 'hello' to test the connection",
-                  "example": "hello"
-                }
-              }
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/ApiKey"
+                    }
+                ]
             },
-    "UsersPingResponse": {
-      "description": "A successful ping response",
-      "type": "object",
-      "properties": {
-        "PING": {
-          "type": "string",
-          "example": "PONG!"
-        }
-      }
-    }
+            "UsersPingResponse": {
+                "description": "The string 'PONG!'",
+                "type": "string",
+                "const": "PONG!"
+            },
             "UsersSendersRequest": {
                 "description": "Request payload for retrieving senders associated with this account",
                 "example": {
