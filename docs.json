@@ -7,7 +7,7 @@
     "light": "#FFE01B",
     "dark": "#C89400"
   },
-  "versions": ["v1.4", "v1.3"],
+  "versions": ["v1.5", "v1.4", "v1.3"],
   "navigation": {
     "tabs": [
       {
@@ -16,16 +16,17 @@
           {
             "group": "Getting Started",
             "pages": ["introduction", "quickstart", "authentication"]
-          },
-          {
-            "group": "Resources",
-            "pages": ["changelog"]
           }
         ]
       },
       {
         "tab": "API Reference",
         "groups": [
+          {
+            "group": "v1.5 Preview",
+            "version": "v1.5",
+            "pages": ["v1.5-preview"]
+          },
           {
             "group": "v1.4 Reference",
             "version": "v1.4",
