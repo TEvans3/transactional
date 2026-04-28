@@ -7,7 +7,10 @@
     "light": "#FFE01B",
     "dark": "#C89400"
   },
-  "versions": ["v1.4", "v1.3"],
+  "versions": [
+    "v1.4",
+    "v1.3"
+  ],
   "navigation": {
     "tabs": [
       {
@@ -15,11 +18,17 @@
         "groups": [
           {
             "group": "Getting Started",
-            "pages": ["introduction", "quickstart", "authentication"]
+            "pages": [
+              "introduction",
+              "quickstart",
+              "authentication"
+            ]
           },
           {
             "group": "Resources",
-            "pages": ["changelog"]
+            "pages": [
+              "changelog"
+            ]
           }
         ]
       },
