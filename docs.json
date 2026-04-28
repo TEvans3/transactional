@@ -16,6 +16,10 @@
           {
             "group": "Getting Started",
             "pages": ["introduction", "quickstart", "authentication"]
+          },
+          {
+            "group": "Resources",
+            "pages": ["changelog"]
           }
         ]
       },

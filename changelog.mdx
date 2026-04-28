@@ -1,0 +1,26 @@
+---
+title: Changelog
+description: Recent updates and improvements to Mailchimp Transactional.
+---
+
+<Update label="April 28, 2026">
+
+## API v1.4
+
+API v1.4 is now available. Switch to the **v1.4** version in the API Reference tab to explore the updated endpoints.
+
+### New features
+
+- **SMS rejection denylist.** Manage rejected phone numbers for SMS sending with three new endpoints:
+  - `POST /rejects/add-sms` — Add a phone number to your SMS denylist. Manually added numbers never expire and incur no reputation penalty when removed.
+  - `POST /rejects/list-sms` — List entries on your SMS denylist, with optional filtering by phone number and an `include_expired` flag.
+  - `POST /rejects/delete-sms` — Remove a phone number from your SMS denylist.
+
+### Breaking changes
+
+If you depend on any of the endpoints below, stay on v1.3 or migrate before upgrading.
+
+- **URL tracking endpoints removed.** `/urls/list`, `/urls/search`, and `/urls/time-series` are no longer available in v1.4.
+- **Whitelist endpoints removed.** `/whitelists/add`, `/whitelists/delete`, and `/whitelists/list` are no longer available in v1.4. Use the rejects endpoints to manage delivery exceptions.
+
+</Update>
