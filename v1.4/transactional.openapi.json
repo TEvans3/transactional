@@ -11597,7 +11597,7 @@
                     "PING": "PONG!"
                 }
             },
-            "UsersPingRequest": {
+           "UsersPingRequest": {
               "description": "Request payload for validating an API key with a ping",
               "type": "object",
               "required": ["test"],
@@ -11609,17 +11609,19 @@
                   "type": "string",
                   "description": "Type 'hello' to test the connection",
                   "example": "hello"
-                    }
-                ]
+                }
+              }
             },
-            "UsersPingResponse": {
-                  "description": "A successful ping response",
-                  "type": "object",
-                  "properties": {
-                    "PING": {
-                      "type": "string",
-                      "example": "PONG!"
-            },
+    "UsersPingResponse": {
+      "description": "A successful ping response",
+      "type": "object",
+      "properties": {
+        "PING": {
+          "type": "string",
+          "example": "PONG!"
+        }
+      }
+    }
             "UsersSendersRequest": {
                 "description": "Request payload for retrieving senders associated with this account",
                 "example": {
